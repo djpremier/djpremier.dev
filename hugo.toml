@@ -1,0 +1,158 @@
+baseURL = 'https://djpremier.dev/'
+title = 'Djpremier.dev'
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+enableInlineShortcodes = true
+
+defaultContentLanguage = 'en'
+
+[outputs]
+  home = ['html', 'llms']
+  page = ['html']
+  section = ['html', 'rss']
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    title = 'Djpremier.dev'
+  [languages.pt-br]
+    languageName = 'Português (BR)'
+    weight = 2
+    title = 'Djpremier.dev'
+  [languages.es]
+    languageName = 'Español'
+    weight = 3
+    title = 'Djpremier.dev'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.146.0'
+
+  [[module.imports]]
+    path = 'github.com/imfing/hextra'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    pageRef = '/projects'
+    weight = 40
+
+  # [[menu.main]]
+  #   identifier = 'blog'
+  #   name = 'Blog'
+  #   pageRef = '/blog'
+  #   weight = 50
+
+  [[menu.main]]
+    identifier = 'search'
+    name = 'Search'
+    weight = 60
+    [menu.main.params]
+      type = 'search'
+
+  [[menu.main]]
+    identifier = 'github'
+    name = 'GitHub'
+    url = 'https://github.com/djpremier'
+    weight = 70
+    [menu.main.params]
+      icon = 'github'
+
+  [[menu.main]]
+    identifier = 'linkedin'
+    name = 'LinkedIn'
+    url = 'https://www.linkedin.com/in/djpremier/'
+    weight = 80
+    [menu.main.params]
+      icon = 'linkedin'
+
+  [[menu.main]]
+    identifier = 'telegram'
+    name = 'Telegram'
+    url = 'https://t.me/djpremier'
+    weight = 90
+    [menu.main.params]
+      icon = 'telegram'
+
+[params]
+  displayUpdatedDate = true
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+    width = 'wide'
+
+  [params.search]
+    enable = true
+    type = 'flexsearch'
+
+    [params.search.flexsearch]
+      # index page by: content | summary | heading | title
+      index = 'content'
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize = 'forward'
+
+  [params.page]
+    width = 'wide'
+
+  [params.theme]
+    default = 'system'
+    displayToggle = true
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = false
+    displaySocials = true
+    displaySearch = true
+    displayGithub = true
+    displayLinkedin = true
+    displayTelegram = true
+    width = 'wide'
+
+  [params.editURL]
+    enable = false
+    base = 'https://github.com/djpremier/djpremier.dev/edit/main/content'
+
+[blog]
+  [blog.list]
+    displayTags = true
+    sortBy = 'publishDate'
+    sortOrder = 'desc'
+    pagerSize = 5
+  [blog.article]
+    displayPagination = true
+
+[toc]
+  displayTags = true
+
+[highlight]
+  [highlight.copy]
+    enable = true
+    display = 'hover'

@@ -1,0 +1,29 @@
+# Hextra default keys
+backToTop: "Voltar ao topo"
+changeLanguage: "Mudar idioma"
+changeTheme: "Mudar tema"
+copyCode: "Copiar código"
+copyright: "© [Diefferson Koderer Môro](https://djpremier.dev) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+dark: "Escuro"
+editThisPage: "Editar esta página no GitHub →"
+lastUpdated: "Última atualização em"
+light: "Claro"
+noResultsFound: "Nenhum resultado encontrado."
+onThisPage: "Nesta página"
+tags: "Tags"
+poweredBy: "Desenvolvido por Diefferson Koderer Môro"
+readMore: "Ler mais →"
+searchPlaceholder: "Buscar..."
+previous: "Anterior"
+next: "Próximo"
+
+# Custom keys
+home: Início
+about: Sobre
+projects: Projetos
+blog: Blog
+search: Buscar
+github: GitHub
+linkedin: LinkedIn
+x: X
+telegram: Telegram
